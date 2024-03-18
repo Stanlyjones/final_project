@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/stanly/Downloads/final_project/src 2/src/src/main.py", line 1, in <module>
+    from ryu.base import app_manager
+  File "/usr/local/lib/python3.10/dist-packages/ryu/base/app_manager.py", line 35, in <module>
+    from ryu.app import wsgi
+  File "/usr/local/lib/python3.10/dist-packages/ryu/app/wsgi.py", line 35, in <module>
+    from ryu.lib import hub
+  File "/usr/local/lib/python3.10/dist-packages/ryu/lib/hub.py", line 30, in <module>
+    import eventlet
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/__init__.py", line 17, in <module>
+    from eventlet import convenience
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/convenience.py", line 7, in <module>
+    from eventlet.green import socket
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/green/socket.py", line 4, in <module>
+    __import__('eventlet.green._socket_nodns')
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/green/_socket_nodns.py", line 11, in <module>
+    from eventlet import greenio
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/greenio/__init__.py", line 3, in <module>
+    from eventlet.greenio.base import *  # noqa
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/greenio/base.py", line 32, in <module>
+    socket_timeout = eventlet.timeout.wrap_is_timeout(socket.timeout)
+  File "/usr/local/lib/python3.10/dist-packages/eventlet/timeout.py", line 166, in wrap_is_timeout
+    base.is_timeout = property(lambda _: True)
+TypeError: cannot set 'is_timeout' attribute of immutable type 'TimeoutError'
